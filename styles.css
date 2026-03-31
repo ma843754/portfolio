@@ -309,8 +309,8 @@ p {
   box-shadow: var(--shadow-hover);
 }
 
-/* This is the important image fill fix */
-.project-image {
+/* ONLY applies to homepage + work page */
+.project-grid-page .project-image {
   height: 220px;
   overflow: hidden;
   border-bottom: 1px solid var(--border);
@@ -319,11 +319,11 @@ p {
   background: linear-gradient(135deg, #fff5eb, #fffaf5);
 }
 
-.project-image.large {
+.project-grid-page .project-image.large {
   height: 270px;
 }
 
-.project-image img {
+.project-grid-page .project-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -331,10 +331,23 @@ p {
   transition: transform 0.3s ease;
 }
 
-.project-card:hover .project-image img {
+.project-grid-page .project-card:hover .project-image img {
   transform: scale(1.05);
 }
+.image-block {
+  min-height: 300px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
 
+.image-block img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .placeholder {
   display: grid;
   place-items: center;
