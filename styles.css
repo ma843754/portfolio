@@ -388,7 +388,9 @@ p {
   margin-top: auto;
   padding-top: 1rem;
 }
-
+.project-content .case-link {
+  margin-top: auto;
+}
 .project-content p strong {
   color: var(--text);
 }
