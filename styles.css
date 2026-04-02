@@ -364,6 +364,18 @@ p {
 
 .project-content {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-content .text-link {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.project-content p strong {
+  color: var(--text);
 }
 
 .project-content h2,
